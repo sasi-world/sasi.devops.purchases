@@ -43,13 +43,13 @@ functions:
       SLS_DEBUG: true
     events:
       - http:
-          path: photos
+          path: purchases
           method: post
           cors: true
           integration: lambda-proxy
 
       - http:
-          path: photos
+          path: purchases
           method: get
           cors: true
           integration: lambda-proxy
