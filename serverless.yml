@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: sasi.devops.purchases
+service: sasi-devops-purchases
 
 package:
   individually: true
