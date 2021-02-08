@@ -6,13 +6,13 @@ Resources:
       AttributeDefinitions:
         - AttributeName: ID
           AttributeType: S
-        - AttributeName: username
+        - AttributeName: photoID
           AttributeType: S
 
       KeySchema:
         - AttributeName: ID
           KeyType: HASH
-        - AttributeName: username
+        - AttributeName: photoID
           KeyType: RANGE
       # Set the capacity based on the stage
       ProvisionedThroughput:
