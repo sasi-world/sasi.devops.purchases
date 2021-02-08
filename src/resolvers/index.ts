@@ -7,6 +7,6 @@ export const resolvers: IResolvers = {
   },
   Mutation: {
     createPurchase: (root: any, args: object, context: object) =>
-      createPurchaseargs(args, context),
+      createPurchase(args, context),
   },
 };
