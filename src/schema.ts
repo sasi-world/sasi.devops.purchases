@@ -1,5 +1,14 @@
 const schema = `
 
+type Purchases {
+     ID: String!
+     photoID: String!
+     contributorID: String!
+     contributorUsername:String!
+     customerEmail: String!
+     imageURL:String
+     dateCreated: String!
+}
 
 
 """
@@ -9,6 +18,6 @@ type Query {
      hello: String!
 }
 
-`
+`;
 
-export { schema }
+export { schema };
