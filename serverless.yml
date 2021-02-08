@@ -77,3 +77,6 @@ functions:
           method: get
           cors: true
           integration: lambda-proxy
+
+resources:
+  - ${file(resources/purchases-table.yml)}
