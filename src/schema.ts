@@ -1,4 +1,4 @@
-const schema = `
+const schema: string = `
 
 type Photo {
      name: String
