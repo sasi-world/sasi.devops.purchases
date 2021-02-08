@@ -1,12 +1,16 @@
 const schema = `
 
+type Photo {
+     name: String
+     imageURL: String
+}
 type Purchases {
      ID: String!
      photoID: String!
      contributorID: String!
      contributorUsername:String!
      customerEmail: String!
-     imageURL:String
+     photo: Photo
      dateCreated: String!
 }
 
