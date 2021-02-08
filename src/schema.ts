@@ -26,8 +26,8 @@ input PuchaseseInput {
      contributorUsername:String!
      customerEmail: String!
      photo: PhotoInput
-     dateCreated: String!
 }
+
 """
 A hello world Query
 """
@@ -38,7 +38,7 @@ type Query {
 
 
 type Mutation {
-     createPurchase()
+     createPurchase(input: PurchaseInput!): Purchases
 }
 `;
 
