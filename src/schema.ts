@@ -14,14 +14,32 @@ type Purchases {
      dateCreated: String!
 }
 
+type PhotoInput {
+     name: String
+     imageURL: String
+}
 
+input PuchaseseInput {
+     ID: String!
+     photoID: String!
+     contributorID: String!
+     contributorUsername:String!
+     customerEmail: String!
+     photo: PhotoInput
+     dateCreated: String!
+}
 """
 A hello world Query
 """
 type Query {
      hello: String!
+     getPurchases: [Purchases]
 }
 
+
+type Mutation {
+     createPurchase()
+}
 `;
 
 export { schema };
