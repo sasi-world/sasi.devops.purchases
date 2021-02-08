@@ -14,7 +14,7 @@ plugins:
 # Enable auto-packing of external modules
 custom:
   stage: ${opt:stage, self:provider.stage}
-  UsersDB: ${self:custom.stage}-sasi-users
+  PurchasesDB: ${self:custom.stage}-sasi-purchases
   tableThroughputs:
     prod: 1
     default: 1
