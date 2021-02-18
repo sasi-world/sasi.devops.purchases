@@ -14,7 +14,7 @@ type Purchases {
      dateCreated: String!
 }
 
-type PhotoInput {
+input PhotoInput {
      name: String
      imageURL: String
 }
