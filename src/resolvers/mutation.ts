@@ -6,10 +6,12 @@ export const createPurchase = async (args: any, context: object) => {
   };
   const params = {
     TableName: process.env.PurchasesDB,
-    Item: { ID: Utils.uuidv4(), ...PurchaseInput },
+    Item: { ID: Utils.uuidv4(), dateCreated: new Date(), ...PurchaseInput },
   };
 
   try {
+    console.log(params);
+
     const purchase = await dynamoDB.default.put(params);
     console.log(purchase);
     return purchase.Attributes;
