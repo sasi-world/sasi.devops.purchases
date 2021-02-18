@@ -2,7 +2,7 @@ import * as dynamoDB from "../../libs/dynamoDB";
 
 export const createPurchase = async (args: any, context: object) => {
   const PurchaseInput: object = {
-    ...args.input,
+    ...args.purchase,
   };
   const params = {
     TableName: process.env.PurchasesDB,
