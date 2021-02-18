@@ -19,7 +19,7 @@ type PhotoInput {
      imageURL: String
 }
 
-input PuchaseseInput {
+input PurchaseInput {
      ID: String!
      photoID: String!
      contributorID: String!
@@ -38,7 +38,7 @@ type Query {
 
 
 type Mutation {
-     createPurchase(input: PurchaseInput!): Purchases
+     createPurchase(purchase: PurchaseInput!): Purchases
 }
 `;
 
