@@ -1,6 +1,9 @@
 import * as AWS from "aws-sdk";
 
-const client: any = new AWS.DynamoDB.DocumentClient({ region: "eu-west-1" });
+const client: any = new AWS.DynamoDB.DocumentClient({
+  region: "eu-west-1",
+  apiVersion: "2012-08-10",
+});
 
 export default {
   get: (params: object) => client.get(params).promise(),
