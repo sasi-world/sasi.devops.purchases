@@ -8,4 +8,12 @@ export const createPurchase = async (args: any, context: object) => {
     TableName: process.env.PurchasesDB,
     Item: { ...PurchaseInput },
   };
+
+  try {
+    const purchase = await dynamoDB.default.put(params);
+    console.log(purchase);
+    return purchase.Attributes;
+  } catch (e) {
+    throw new Error(e);
+  }
 };
