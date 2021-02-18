@@ -20,7 +20,6 @@ input PhotoInput {
 }
 
 input PurchaseInput {
-     ID: String!
      photoID: String!
      contributorID: String!
      contributorUsername:String!

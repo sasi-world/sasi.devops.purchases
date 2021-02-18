@@ -6,7 +6,8 @@ export const createPurchase = async (args: any, context: object) => {
   };
   const params = {
     TableName: process.env.PurchasesDB,
-    Item: { ...PurchaseInput },
+    Item: { ID:,
+      ...PurchaseInput },
   };
 
   try {
