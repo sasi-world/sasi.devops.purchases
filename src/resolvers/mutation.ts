@@ -10,8 +10,6 @@ export const createPurchase = async (args: any, context: object) => {
   };
 
   try {
-    console.log(params);
-
     await dynamoDB.default.put(params);
     const Purchase = { ...params.Item };
     return Purchase;
